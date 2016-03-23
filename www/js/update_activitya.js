@@ -524,8 +524,8 @@ var settings = {
     //alert('success');
     sessionStorage.setItem("ret",JSON.stringify(data));
     ret =  JSON.parse(sessionStorage.getItem("ret"));
-    //var res = ret.slice(12,100);
-    var res = ret.slice(137,300);
+    var res = ret.slice(12,100);  //live
+   // var res = ret.slice(137,300); //stage
    // alert(res+'res');
    //alert(verification_user_id+'verification_user_id');
       //alert(coordinator_id+'coordinator_id');
