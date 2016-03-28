@@ -707,7 +707,7 @@ document.getElementById('remarkg').value = "";
   //$("input[type='radio']:first").attr("checked", "checked");
 //alert(region);
 //alert(user_id);
-
+alert('Verification Record Submitted Successfully');
 //alert('Verification Record Submitted Successfully');
 
 $.ajax({url: 'http://fourthforce.in/verify/slim/slim_four_rips/count.php?region='+region+"&user_id="+user_id+"&state="+state,
@@ -737,7 +737,7 @@ $.ajax({url: 'http://fourthforce.in/verify/slim/slim_four_rips/count.php?region=
          sessionStorage.setItem("supervisor_activity_log_array",JSON.stringify(result[8]));
     sessionStorage.setItem("supervisor_final_command_array",JSON.stringify(result[9]));
 
-alert('Verification Record Submitted Successfully');
+//alert('Verification Record Submitted Successfully');
 
       $.mobile.loading().hide();
       $.mobile.changePage($('#dashboard'), { transition: "none", changeHash: true, reverse: false });
